@@ -1,16 +1,16 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const userSchema = mongoose.Schema(
   {
-    active: Boolean,
-    age: Number,
-    fullName: String,
+    age: { type: Number, required: true },
+    fullName: { type: String, required: true },
+    isActive: { type: Boolean, required: true, default: true },
     meta: {
-      careerScore: Number,
-      drinkingFrequency: Number,
-      isNightOwl: Boolean,
-      livingSituation: String, // Alone, Roommates, Family
-      profession: String, // Student, Employed, Unemployed
+      careerScore: { type: Number },
+      drinkingFrequency: { type: Number },
+      isNightOwl: { type: Boolean, required: true },
+      livingSituation: { type: String }, // Alone, Roommates, Family
+      profession: { type: String }, // Student, Employed, Unemployed
     },
   },
   { timestamps: true }
