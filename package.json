@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/nirnejak/hackon#readme",
   "dependencies": {
+    "mongoose": "^5.12.7",
     "next": "^10.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
