@@ -6,7 +6,10 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "next",
+    "develop": "next",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
     "prepare": "husky install"
   },
   "repository": {
